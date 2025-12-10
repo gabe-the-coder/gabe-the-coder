@@ -1,0 +1,184 @@
+header, nav, main, footer { display: block; }
+/*body background-color set to cornsilk*/
+body { background-color: #FFF8DC;
+       font-family: Calibri, Arial, sans-serif;
+}
+/*wrapper background-color set to GoldenRod word color was set to cornsilk*/
+#wrapper { width: 960px;
+           margin: auto;
+		   background-color: #DAA520;
+		   color: #FFF8DC;
+		   box-shadow: 10px 10px 10px #000000;
+}
+/*h1 background-color set to Dodger Blue, font size set to 5em, height set to 90px, background image was removed, set the text-shadow to 4.5px, need to change the font from timse new roman!! new font Arial */
+h1 { 
+     background-repeat: no-repeat;
+     background-color: #1E90FF;
+	 height: 90px;
+	 font-family: Arial;
+	 font-size: 5em;
+     text-align: center;
+	 padding-top: 20px;
+	 text-shadow: 4.5px 4.5px 4.5px #90745D;
+	 margin-bottom: 0;
+}
+/*change text-align to center */
+nav { padding-top: 10px;
+      width: 100%; 
+	  text-align: center;
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	   display: flex;
+	   flex-direction: column;
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+/*nav link updated to black, visited color updated to DarkSlateBlue, and hover set to red*/
+nav a { text-decoration: none; }
+nav a:link { color: #000000; }
+nav a:visited{ color: #483D8B; }
+nav a:hover { color: #FF0000; }
+
+/*background-color set to FireBrick, delete margin*/
+main { background-color: #B22222;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+}
+/*chang the images widthand hight to 100% not in phon vewe*/
+img {
+	width:100%;
+	height: 100%;
+}
+
+/*footer background-color set to RoyalBlue, delete the margin*/
+footer { background-color: #4169E1;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+
+/*line 64 to 76 makes the table on events page look nice*/
+table {
+	margin: auto;
+	width: 90%;
+	border-spacing: 0;
+}
+
+th,td{
+	padding: 10px;
+}
+/*maks odd parts of the table RoyalBlue*/
+tr:nth-of-type(odd) {
+	background-color: #4169E1;
+}
+/*maks the even parts of the table Indigo*/
+tr:nth-of-type(even) {
+	background-color: #4B0082;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1em;
+	width: 50%;
+}
+
+input,textarea {
+	margin-bottom: .5em;
+}
+
+/*added midia query for phone*/
+@media (max-width: 600px) {
+	header{
+		padding-left: 0;
+		text-align: center;
+	}
+
+
+h1 {
+	font-size: 3em;
+}
+
+nav ul {
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	
+}
+
+nav li {
+	border-bottom: none;
+}
+
+
+form {
+	 width: 40%;
+	 display: grid;
+	 grid-gap: 3em;
+	 gap: 1em;
+	 grid-template-columns: 6em 1fr;
+ }
+input[type="submit"] {
+	grid-column: 2 / 3;
+	width: 9em;
+}
+
+#motel{
+		background-image: url(../images/motel.png);
+		height: 50vh
+}
+
+#onebedroom{	
+		background-image: url(../images/onebedroom.jpg);
+}
+
+#threebedroom {
+		background-image: url(../images/threebedroom.jpg);
+}
+
+#Events {
+		background-image: url(../imeges/Events.jpg);
+}
+
+#flow {
+	display: flex;
+	flex-direction: row;
+}
+
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+/*chang the image width and hight to 100%*/
+img {
+	width:100%;
+	height: 100%;
+}
+
+h4 {
+	margin-left: 10%;
+	margin-right: 10%;
+ }
+ form {
+	 width: 40%;
+	 display: grid;
+	 grid-gap: 1em;
+	 gap: 1em;
+ }
+input[type="submit"] {
+	grid-column: 2 / 3;
+	width: 9em;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	
+}
+}

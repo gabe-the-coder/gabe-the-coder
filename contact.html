@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gabe's Motel</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Gabe's Motel</h1>
+  </header>
+  <!--change nav from unorderd list to central alined and put spacing between them and change room 1 and room 2 to Single Bedroom and tree Bedroom.-->
+  <!--also edit nav that have "deviders" in between each link-->
+  <nav> 
+    <a href="index.html">Home</a>&nbsp; | 
+	<a href="rooms/single-bedroom.html">Single Bedroom</a>&nbsp; | 
+	<a href="rooms/three-bedroom.html">Three Bedroom</a>&nbsp; | 
+	<a href="events/special_event.html">Weekend Events</a>&nbsp; | 
+	<a href="contact.html">Contact</a>
+  </nav>
+  <main>
+  <h3>Contact form </h3>
+  <p>Fill out this form and we will Contact you for booking information!</p>
+  
+  <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+				<label for="myName">Name: </label>
+				<input type="text" id="myName" name="myName" required>
+				<label for="myEmail">E-mail: </label>
+				<input type="email" id="myEmail" name="myEmail" required>
+				<label for="myDate">Date filled: </label>
+				<input type="date" id="myDate" name="myDate" required>
+				<label for="myPhone">Phone number: </label>
+				<input type="Phone number" id="myPhone" name="myPhone" required>
+				
+				<fieldset>
+					<legend>How would you like to be Contacted</legend>
+					<input type="checkbox" id="Phone-number" name="Phone-number" value="By Phone number">
+					<label for="Phone-number">By Phone number</label><br>
+					<input type="checkbox" id="E-mail" name="E-mail" value="By E-mail">
+					<label for="E-mail">By E-mail</label><br>
+					<input type="submit" value="submit">
+				</fieldset>
+	</form>
+  
+  </main>
+  <footer>
+  Copyright &copy; 2025<br>
+  <a href="mailto:gabarba21@amarillocollege.com">Gabe</a>
+  
+  </footer>
+</div>
+</body>
+</html>
