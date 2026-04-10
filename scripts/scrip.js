@@ -2,7 +2,7 @@
 const ROOM_SERVICE = 50; //room servas cost
 const BREAKFAST_AND_COFFEE = 40; //breakfast and coffee cost
 const CHAMPAGNE_COST = 80; //champagne cost
-const SALES_TAX = 0.20; //sales tax
+const SALES_TAX = 0.07; //sales tax was 0.20
 
 //geting the element id of room service, breakfast and coffee, and champagne from html
 document.getElementById("room service").onclick = calcTotal;
