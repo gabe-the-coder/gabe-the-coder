@@ -1,0 +1,166 @@
+header, nav, main, footer { display: block; }
+
+body {
+   line-height: 1;
+   max-width: 960px;
+   background: white;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+/*wrapper background-color set to GoldenRod word color was set to cornsilk*/
+#wrapper { width: 960px;
+           margin: auto;
+		   background-color: #DAA520;
+		   color: #3F2B26;
+		   box-shadow: 10px 10px 10px #000000;
+}
+
+/*h1 background-color set to Dodger Blue, font size set to 5em, height set to 90px, background image was removed, set the text-shadow to 4.5px, need to change the font from timse new roman!! new font Arial */
+h1 { 
+      background-repeat: no-repeat;
+      background-color: #1E90FF;
+      height: 100px;
+	   font-family: Arial;
+	   font-size: 2em;
+      text-align: center;
+	   padding-top: 20px;
+	   text-shadow: 4.5px 4.5px 4.5px #90745D;
+	   margin-bottom: 0;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/*change text-align to center */
+nav { padding-top: 10px;
+      width: 100%; 
+	  text-align: center;
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	   display: flex;
+	   flex-direction: column;
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+/*nav link updated to black, visited color updated to DarkSlateBlue, and hover set to red*/
+nav a { text-decoration: none; }
+nav a:link { color: #000000; }
+nav a:visited{ color: #483D8B; }
+nav a:hover { color: #FF0000; }
+
+/*background-color set to FireBrick, delete margin*/
+main { background-color: #B22222;
+      padding: 1px 20px 20px 20px;   
+		min-height: 300px;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+   background: #FFE373;
+   width: 100%;
+   color: #FFF8DC;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+
+/* article styles */
+article {
+   width: 100%;
+   height: 800px;
+   margin: 0 auto;
+   background: #B22222;
+   padding-bottom: 20px;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+
+
+
+article > h1 {
+   font-size: 3.8em;
+   text-align: center;
+   color: ivory;
+   text-shadow: 2px 2px 10px black;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   margin: 5px 0 20px 0;
+}
+
+article > p {
+   font-size: 1.5em;
+   line-height: 2;
+}
+
+article > ul {
+   list-style-type: disc;
+   font-size: 1.2em;
+   line-height: 2;
+   padding-left: 20px;
+   padding-bottom: 40px;
+   border-bottom: 3px solid gray;
+}
+
+
+/*added midia query for phone*/
+@media (max-width: 600px) {
+	article{
+        width: 100%;
+        padding: 10px;
+    }
+
+    aside{
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+h1 {
+	font-size: 2em;
+}
+
+nav ul {
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	
+}
+
+nav li {
+	border-bottom: none;
+}
+
+#flow {
+	display: flex;
+	flex-direction: row;
+}
+
+#mobile {
+	display: inline;
+		
+}
+
+#desktop {
+	display: inline;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	
+}
+}
