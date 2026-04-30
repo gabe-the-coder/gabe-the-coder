@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Store</title>
+    <link rel="stylesheet" href="css/store_styles.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/store.js" defer></script>
+</head>
+<body>
+	<header>
+	    <div class="container header-row">
+            <div>
+                <h1>Campus Outfitters</h1>
+                <p class="subtitle">Simple Shopping Cart Example</p>
+            </div>
+            <nav>
+                <a class="nav-button" href="cart.html">View Cart</a>
+            </nav>
+			<nav>
+				<a href="index.html">Home</a>&nbsp; | 
+				<a href="rooms/single-bedroom.html">Single Bedroom</a>&nbsp; | 
+				<a href="rooms/three-bedroom.html">Three Bedroom</a>&nbsp; | 
+				<a href="events/special_event.html">Weekend Events</a>&nbsp; | 
+				<a href="contact.html">Contact</a>&nbsp; |
+				<a href="Estimation of Costs.html">Estimation of Costs</a>&nbsp; |
+				<a href="review.html">Customer Reviews</a>&nbsp; |
+    			<a href="gallery.html">Photo Gallery</a>&nbsp; |
+    			<a href="store.html">online store</a>
+			</nav>
+        </div>
+	</header>
+	<main class="container">
+		<section class="intro-card">
+			<h2> Storefront</h2>
+			<p>Select options for an item, choose a quantity, and add it to the cart.</p>
+		</section>
+		<section id="product-list" class = "product-grid">
+		<div class="product-card">
+            <!--help frome gemini AI-->
+            <div class="product-card">
+                <img src="images/t_shirt.png" alt="Gabe's Motel T-Shirt" class="product-image">
+                <h3>Gabe's Motel T-Shirt</h3>
+            </div>
+
+			<h3>T-Shirt</h3>
+			<p>$18.00</p>
+        
+		<label>Color:</label>
+			<select id="color-1">
+				<option>Black</option><option>Blue</option><option>Green</option><option>Gray</option><option>Navy</option><option>Maroon</option>
+			</select>
+        <label>Size:</label>
+			<select id="size-1">
+				<option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+			</select>
+		<label>Quantity</label>
+			<select id="qty-1">
+				<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+			</select>
+		<button class="action-button primary-button" onclick="addToCart('Campus T-Shirt', 18.00, 1)">Add to Cart</button>
+		</div>
+
+		<div class="product-card">
+
+			<!--help frome gemini AI-->
+            <div class="product-card">
+                <img src="images/hoodei.png" alt="Gabe's Motel Hoodie" class="product-image">
+                <h3>Gabe's Motel Hoodie</h3>
+            </div>
+
+			<h3>Hoodie</h3>
+			<p>$32.00</p>
+        
+			<label>Color:</label>
+			<select id="color-2">
+				<option>Black</option><option>Blue</option><option>Green</option><option>Gray</option><option>Navy</option><option>Maroon</option>
+			</select>
+			<label>Size:</label>
+			<select id="size-2">
+				<option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+			</select>
+			<label>Quantity</label>
+				<select id="qty-2">
+					<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+				</select>
+			<button class="action-button primary-button" onclick="addToCart('University Hoodie', 32.00, 2)">Add to Cart</button>
+		</div>
+		
+		<div class="product-card">
+
+			<!--help frome gemini AI-->
+            <div class="product-card">
+                <img src="images/cap.png" alt="Gabe's Motel Baseball Cap" class="product-image">
+                <h3>Gabe's Motel Baseball Cap</h3>
+            </div>
+
+			<h3>Baseball Cap</h3>
+			<p>$14.00</p>
+      
+			<label>Color:</label>
+			<select id="color-3">
+				<option>Black</option><option>Blue</option><option>Green</option><option>Gray</option><option>Navy</option><option>Maroon</option>
+			</select>
+			<label>Size:</label>
+			<select id="size-3">
+				<option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+			</select>
+			<label>Quantity</label>
+				<select id="qty-3">
+					<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+				</select>
+			<button class="action-button primary-button" onclick="addToCart('Baseball Cap', 14.00, 3)">Add to Cart</button>
+		</div>
+		
+		<div class="product-card">
+
+			<!--help frome gemini AI-->
+            <div class="product-card">
+                <img src="images/bag.png" alt="Gabe's Motel Backpack" class="product-image">
+                <h3>Gabe's Motel Backpack</h3>
+            </div>
+
+			<h3>Backpack</h3>
+			<p>$49.00</p>
+      
+			<label>Color:</label>
+			<select id="color-4">
+				<option>Black</option><option>Blue</option><option>Green</option><option>Gray</option><option>Navy</option><option>Maroon</option>
+			</select>
+			<label>Size:</label>
+			<select id="size-4">
+				<option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+			</select>
+			<label>Quantity</label>
+				<select id="qty-4">
+					<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+				</select>
+			<button class="action-button primary-button"  onclick="addToCart('Backpack', 49.00, 4)">Add to Cart</button>
+		</div>
+
+		<div class="product-card">
+
+			<!--help frome gemini AI-->
+            <div class="product-card">
+                <img src="images/bottel.png" alt="Gabe's Motel Water Bottle" class="product-image">
+                <h3>Gabe's Motel Water Bottle</h3>
+            </div>
+
+			<h3>Water Bottle</h3>
+
+			<p>$9.99</p>
+      
+			<label>Color:</label>
+			<select id="color-5">
+				<option>Black</option><option>Blue</option><option>Green</option><option>Gray</option><option>Navy</option><option>Maroon</option>
+			</select>
+			<label>Size:</label>
+			<select id="size-5">
+				<option>Small</option><option>Medium</option><option>Large</option>
+			</select>
+			<label>Quantity</label>
+				<select id="qty-5">
+					<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+				</select>
+			<button class="action-button primary-button" onclick="addToCart('Water Bottle', 9.99, 5)">Add to Cart</button>
+		</div>
+		
+		<div class="product-card">
+
+			<!--help frome gemini AI-->
+            <div class="product-card">
+                <img src="images/mug.png" alt="Gabe's Motel Mug" class="product-image">
+                <h3>Gabe's Motel Mug</h3>
+            </div>
+
+			<h3>Mug</h3>
+			<p>$15.99</p>
+      
+			<label>Color:</label>
+			<select id="color-6">
+				<option>Black</option><option>Maroon</option>
+			</select>
+			<label>Size:</label>
+			<select id="size-6">
+				<option>Medium</option>
+			</select>
+			<label>Quantity</label>
+				<select id="qty-6">
+					<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+				</select>
+			<button class="action-button primary-button" onclick="addToCart('Mug', 15.99, 6)">Add to Cart</button>
+		</div>
+		
+		
+
+</body>
+</html>

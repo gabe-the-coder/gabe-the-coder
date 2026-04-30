@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information</title>
+    <link rel="stylesheet" href="css/store_styles.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/shipping.js" defer></script>
+</head>
+<body onload="initShippingPage()">
+    <header>
+        <div class="container header-row">
+            <div>
+                <h1>Campus Outfitters</h1>
+                <p class="subtitle">Final Shipping Page</p>
+            </div>
+            <nav class="nav-links">
+                <a class="nav-button" href="store.html">Storefront</a>
+                <a class="nav-button" href="cart.html">Back to Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container shipping-layout">
+        <section class="shipping-card">
+            <h2>Shipping Information</h2>
+            <form id="shipping-form">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required>
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" required>
+
+                <label for="state">State</label>
+                <input type="text" id="state" required>
+
+                <label for="zipCode">Zip Code</label>
+                <input type="text" id="zipCode" required>
+
+                <label for="notes">Delivery Notes</label>
+                <textarea id="notes" rows="4"></textarea>
+
+                <button type="submit" class="action-button primary-button">Place Simulated Order</button>
+            </form>
+
+            <div id="shipping-message"></div>
+        </section>
+
+        <section class="summary-card">
+            <h2>Order Summary</h2>
+            <div id="shipping-summary"></div>
+        </section>
+    </main>
+</body>
+</html>
