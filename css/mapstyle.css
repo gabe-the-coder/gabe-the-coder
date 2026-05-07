@@ -1,0 +1,51 @@
+header, nav, main, footer { display: block; }
+
+body { font-family: Arial, sans-serif; margin: 20px; }
+    .layout { display: flex; gap: 20px; align-items: flex-start; }
+    .content { flex: 1; }
+
+.layout {
+  display: flex;
+  flex-direction: column; /* Stacks text on top of map */
+  align-items: center;    /* Centers the stack */
+
+  background-color: #FFF8DC;
+  font-family: Calibri, Arial, sans-serif;
+}
+	
+#wrapper {  width: 990px;
+            margin: auto;
+		        background-color: #DAA520;
+		        color: #FFF8DC;
+		        box-shadow: 10px 10px 10px #000000;
+}
+
+nav { padding-top: 10px;
+      width: 100%; 
+	  text-align: center;
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	   display: flex;
+	   flex-direction: column;
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+/*nav link updated to black, visited color updated to DarkSlateBlue, and hover set to red*/
+nav a { text-decoration: none; }
+nav a:link { color: #000000; }
+nav a:visited{ color: #483D8B; }
+nav a:hover { color: #FF0000; }
+
+
+
+/* THE FRAME */
+#map {
+   height: 550px; 
+   width: 900px;
+   border: 10px solid white; 
+   border-radius: 15px;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+   outline: 1px solid #ccc;
+}
